@@ -1,1 +1,218 @@
+<!DOCTYPE html>
+<html><!-- em construção -->
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/index.css">
+		
+	</head>
 
+	<body>
+		<header class="container">
+			<h1><img src="43/antigo/img/logo.png" alt="Mirror Fashion" ></h1>
+			<div class="sacola">
+				Nenhum item na sacola de compras.
+			</div>
+			<nav class="menu-opcoes">
+				<ul>
+					<li><a href="#">Sua Conta</a></li>
+					<li><a href="#">Lista de Desejos</a></li>
+					<li><a href="#">Cartão Fidelidade</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="#">Ajuda</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="container destaque">
+			<section class="busca">
+				<h2>Busca</h2>
+				<form action="http://www.google.com.br/search" id="form-busca">
+					<input id="campo-busca" name="q" type="search">
+					<input id="lupa" type="image" src="43/antigo/img/busca.png">
+				</form>
+			</section>
+			<section class="menu-departamentos">
+			<h2>Departamentos</h2>
+				<nav>
+					<ul>
+						<li><a href="#" class="categorias">Blusas e camisas</a>
+							<ul>
+								<li><a href="">Manga curta</a></li>
+								<li><a href="">Manga comprida</a></li>
+								<li><a href="">Camisa social</a></li>
+								<li><a href="">Camisa casual</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="categorias">Calças</a>
+							<ul>
+								<li><a href="">Calças jeans</a></li>
+								<li><a href="">Calças moleton</a></li>
+								<li><a href="">Calças brancas</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="categorias">Saias</a>
+							<ul>
+								<li><a href="">Mini saia</a></li>
+								<li><a href="">Saia jeans</a></li>
+								<li><a href="">Saia longa</a></li>
+								<li><a href="">Saia academia</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="categorias">Vestidos</a>
+							<ul>
+								<li><a href="">Vestidos curto</a></li>
+								<li><a href="">Vestidos longo</a></li>
+								<li><a href="">Vestido tomara que caia</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="categorias">Sapatos</a>
+							<ul>
+								<li><a href="">Sapatos social</a></li>
+								<li><a href="">Sapatos salto alto</a></li>
+								<li><a href="">Sapatos salto baixo</a></li>
+								<li><a href="">Sapatilhas</a></li>	
+							</ul>			
+						</li>
+					<li><a href="#" class="categorias">Bolsas e Carteiras</a>
+							<ul>
+								<li><a href="">Carteiras de couro</a></li>
+								<li><a href="">Bolsas de couro</a></li>
+								<li><a href="">Bolsas grandes</a></li>
+								<li><a href="">Bolsas pequenas</a></li>
+							</ul>					
+						</li>
+							<li><a class="categorias" href="#">Acessórios</a>
+							<ul>
+								<li><a href="">Óculos</a></li>
+								<li><a href="">Brincos</a></li>
+								<li><a href="">Cintos</a></li>
+								<li><a href="">Pulseiras</a></li>	
+							</ul>			
+						</li>
+					</ul>
+				</nav>
+			</section>					
+			<img src="43/antigo/img/destaque-home.png" alt="Promoção: Big City Night">
+			<a href="#" class="pause"></a>
+		</div>
+		<div class="container paineis">
+			<section class="painel novidades">
+				<h2>Novidades</h2>
+				<ol>
+					<li>
+						<a href="#">
+						<figure>
+							<img src="43/mirror-fashion/img/produtos/miniatura1.png">
+							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+						</figure>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<figure>
+							<img src="43/mirror-fashion/img/produtos/miniatura3.png">
+							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+						</figure>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<figure>
+							<img src="43/mirror-fashion/img/produtos/miniatura9.png">
+							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+						</figure>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<figure>
+							<img src="43/mirror-fashion/img/produtos/miniatura4.png">
+							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+						</figure>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<figure>
+							<img src="43/mirror-fashion/img/produtos/miniatura5.png">
+							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+						</figure>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<figure>
+							<img src="43/mirror-fashion/img/produtos/miniatura10.png">
+							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+						</figure>
+						</a>
+					</li>
+				</ol>
+			</section>
+			<section class="painel mais-vendidos">
+				<h2>Mais-Vendidos</h2>
+				<ol>
+					<li>
+						<a href="#">
+						<figure>
+							<img src="43/mirror-fashion/img/produtos/miniatura13.png">
+							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+						</figure>
+						</a>
+					</li>	
+					<li>
+						<a href="#">
+						<figure>
+							<img src="43/mirror-fashion/img/produtos/miniatura8.png">
+							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+						</figure>
+						</a>
+					</li>	
+					<li>
+						<a href="#">
+						<figure>
+							<img src="43/mirror-fashion/img/produtos/miniatura12.png">
+							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+						</figure>
+						</a>
+					</li>	
+					<li>
+						<a href="#">
+						<figure>
+							<img src="43/mirror-fashion/img/produtos/miniatura15.png">
+							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+						</figure>
+						</a>
+					</li>	
+					<li>
+						<a href="#">
+						<figure>
+							<img src="43/mirror-fashion/img/produtos/miniatura11.png">
+							<figcaption>Fuzz Cardigan por R$ 69,90</figcaption>
+						</figure>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+						<figure>
+							<img src="43/mirror-fashion/img/produtos/miniatura6.png">
+							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+						</figure>
+						</a>
+					</li>						
+				</ol>
+			</section>
+		</div>
+		<footer>
+			<div class="container">
+				<img src="43/antigo/img/logo-rodape.png" alt="Logo Mirror Fashion">
+				<ul class="social">
+					<li><a class="facebook" href="http://facebook.com/mirrorfashion">Facebook</a></li>
+					<li><a class="twitter" href="http:twitter.com/mirrorfashion">Twitter</a></li>
+					<li><a class="googleplus" href="http://plus.google.com">Google+</a></li>
+				</ul>
+			</div>
+		</footer>
+		<script src="javascript/index.js"></script>	
+	</body>
+</html>
