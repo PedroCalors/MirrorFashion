@@ -486,6 +486,36 @@
 				</ul>
 			</div>
 		</footer>
-		<script src="javascript/index.js"></script>	
+		<script>
+			// BuscaEmBranco
+			document.querySelector("#form-busca").onsubmit = function(){
+				if(document.querySelector("#campo-busca").value == ""){
+					alert("Digíte algo para buscar");
+					return false;
+				}
+				document.querySelector("#campo-busca").value="";
+			}
+			// BannerRotativo 
+			var banners = ["43/antigo/img/destaque-home.png","43/antigo/img/destaque-home-2.png"]
+			var bannerAtual = 0;
+			function trocaBanner(){
+				document.querySelector(".destaque img").src = banners[bannerAtual];
+				bannerAtual = (bannerAtual+1)%banners.length;
+			}
+			//setInterval(trocaBanner, 8000);
+			//PausePlay
+			var timer = setInterval(trocaBanner,8000);
+			var controle = document.querySelector(".pause");
+			controle.onclick = function (){
+				if(controle.className == "pause"){
+					clearInterval(timer);
+					controle.className = "play";
+				} else {
+					timer = setInterval(trocaBanner,8000);
+					controle.className = "pause";
+				}
+				return false;
+			}
+		</script>
 	</body>
 </html>
