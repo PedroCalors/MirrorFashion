@@ -52,234 +52,304 @@
 			  border-spacing: 0;
 			}
 			/*Css*/
-			header {
-			position: relative;
+			@media screen{
+				header {
+					position: relative;
+				}
+				.container{
+					margin-left: auto;
+					margin-right: auto;
+					width: 940px;
+				}
+				.sacola{
+					background: url(../43/antigo/img/sacola.png) no-repeat top right;
+					width: 140px;
+					font-size: 14px;
+					padding-right: 35px;
+					text-align: right;
+					padding-top: 5px;
+					position: absolute;
+					top: 0;
+					right: 0;
+
+				}
+				.menu-opcoes{
+					position: absolute;
+					bottom: 10px;
+					right: 0;
+				}
+				.menu-opcoes ul li{
+					font-size: 15px;
+					display: inline;
+				}
+				a{
+					color: gray;
+					padding-right: 10px;
+					text-decoration: none;
+				}
+				.busca{
+					border-top-left-radius: 4px;
+					border-top-right-radius: 4px;
+				}
+				#q{
+					border-radius: 4px;
+				}
+				.busca,
+				.menu-departamentos{
+					background: url(../43/antigo/img/sobre-background.jpg);
+					font-weight: bold;
+					margin-right: 10px;
+					width: 230px;
+					float:left;
+					border-bottom-left-radius: 4px;
+					border-bottom-right-radius: 4px;
+				}
+				.busca h2,
+				.busca form,
+				.menu-departamentos h2{
+					margin: 10px;
+					text-transform: uppercase;
+				}
+				.menu-departamentos li li a:before {
+					content: "\272A";
+					padding-right: 3px;
+				}
+				.menu-departamentos li{
+					background-color: white;
+					margin-bottom: 1px;
+					padding: 5px 10px;
+				}
+				.menu-departamentos li ul{
+					height: 0;
+					overflow: hidden;
+					transition: 0.5s;
+				}
+				.menu-departamentos ul ul li a:hover{
+					color: #900;
+				}
+				.menu-departamentos li:hover ul{
+					height: 107px;
+				}
+				.busca input{
+					vertical-align: middle;
+				}
+				.busca input[type=search]{
+					width: 170px;
+				}
+				.menu-departamentos{
+					clear:left;
+					margin-top: 10px;
+					padding-bottom: 10px;
+				}
+				.banner{
+					border-radius: 3px;
+				}
+				.painel{
+					border: 1px solid black;
+					width: 445px;
+					margin: 10px 0;
+					padding: 10px;
+					border-radius: 10px;
+					box-shadow: inset 2px 2px 4px #999, inset -2px -2px 4px #999;
+				}
+				.novidades{
+					float: left;
+					background: rgb(252,252,252); /* Old browsers */
+					background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(155,155,155,1) 100%); /* FF3.6+ */
+					background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(155,155,155,1))); /* 	Chrome,Safari4+ */
+					background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(155,155,155,1) 100%); /* Chrome10+,Safari5.1+ */
+					background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(155,155,155,1) 100%); /* Opera 11.10+ */
+					background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(155,155,155,1) 100%); /* IE10+ */
+					background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(155,155,155,1) 100%); /* W3C */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#9b9b9b',GradientType=0 ); /* IE6-9 */
+				}
+				.mais-vendidos{
+					float: right;
+					background: rgb(252,252,252); /* Old browsers */
+					background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(155,155,155,1) 100%); /* FF3.6+ */
+					background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(155,155,155,1))); /* 	Chrome,Safari4+ */
+					background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(155,155,155,1) 100%); /* Chrome10+,Safari5.1+ */
+					background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(155,155,155,1) 100%); /* Opera 11.10+ */
+					background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(155,155,155,1) 100%); /* IE10+ */
+					background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(155,155,155,1) 100%); /* W3C */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#9b9b9b',GradientType=0 ); /* IE6-9 */
+				}
+				.painel li{
+					display: inline-block;
+					vertical-align: top;
+					width: 140px;
+					margin: 2px;	
+				}
+				.mais-vendidos a,
+				.novidades a{
+					font-size: 14px;
+					color: black;
+					text-align: center;
+				}
+				.mais-vendidos img,
+				.novidades img{
+					border-radius: 5px;
+				}
+				.painel h2:before{
+					content: "\272A";
+					padding-right: 10px;
+				}
+				.painel h2{
+					font-size: 24px;
+					font-weight: bold;
+					text-transform: uppercase;
+					margin-bottom: 10px;
+					text-shadow: 2px 2px 2px gray;
+				}
+				footer{
+					clear: both;
+					background-image: url(../43/antigo/img/fundo-rodape.png);
+					height: 40px;
+					padding: 20px 0;
+				}
+				footer .container{
+					position: relative;
+				}
+				.social li a{
+					height: 32px;
+					width: 32px;
+					display: block;
+					text-indent: -9999px;
+				}
+				.facebook{
+					background: url(../43/antigo/img/facebook.png) no-repeat;
+				}
+				.twitter{
+					background: url(../43/antigo/img/twitter.png) no-repeat;
+				}
+				.googleplus{
+					background: url(../43/antigo/img/googleplus.png) no-repeat;
+				}
+				.social{
+					position: absolute;
+					top: 5px;
+					right: 0;
+				}
+				.social li{
+					float: left;
+					margin-left: 25px;
+				}
+				footer img{
+					margin-top: 5px;
+					width: 100px;
+					
+				}
+				.menu-opcoes a:hover{
+					color: #900;
+				}
+				.menu-opcoes a:active{
+					color: #900;
+				}
+				.categorias{
+					color: black;
+					text-transform: uppercase;
+				}
+				.destaque{
+					position: relative;
+				}
+				.play{
+					display: block;
+					position:absolute;
+					right: 5px;
+					top: 13px;
+					border-left: 25px solid #900;
+					border-bottom: 15px solid transparent;
+					border-top: 15px solid transparent;
+				}
+				.pause{
+					display: block;
+					position: absolute;
+					right: 15px;
+					top: 15px;
+					border-radius: 1px;
+					border-left: 8px solid #900;
+					border-right: 8px solid #900;
+					height: 25px;
+					width: 0px;
+				}	
+				.painel li:hover{
+					border-radius: 4px;
+					transform: scale(1.1);
+					-webkit-transition: transform 0.4s ease-in;
+					transition: transform 0.4s ease-in;
+				}
+				.painel li{
+					-webkit-transition: all 0.7s ease-out;
+					transition: all 0.7s ease-out;
+				}
 			}
-			.container{
-				margin-left: auto;
-				margin-right: auto;
-				width: 940px;
+			@media (max-width: 939px){
+				.container{
+					width: 96%;
+				}	
+				header h1{
+					text-align: center;
+				}
+				header h1 img {
+					max-width: 50%;
+				}
+				.sacola{
+					display: none;
+				}
+				.menu-opcoes{
+					position: static;
+					text-align: center;
+				}
+				.menu-opcoes ul li{
+					display: inline-block;
+					margin: 5px;
+				}
+				.busca,
+				.menu-departamentos,
+				.destaque img{
+					margin-right: 0;
+					width: 100%;
+				}
+				.destaque img{
+					margin-top: 20px;
+				}
+				.painel{
+					width: auto;
+				}
+				.painel li{
+					width: 45%;
+					margin-right: 2%;
+				}
+				.painel img{
+					width: 70%;
+				}
+				.play,
+				.pause{
+					top: auto;
+					right: auto;
+					left: 10px;
+					bottom: 10px;
+				}
+
 			}
-			.sacola{
-				background: url(../43/antigo/img/sacola.png) no-repeat top right;
-				width: 140px;
-				font-size: 14px;
-				padding-right: 35px;
-				text-align: right;
-				padding-top: 5px;
-				position: absolute;
-				top: 0;
-				right: 0;
-			
+			@media (max-width: 600px){
+				.container{
+					width: 96%;
+				}
+				.painel{
+					width: auto;
+				}
+				.painel li{
+					width: 45%;
+					margin-right: 2%;
+				}
+				.painel img{
+					width: 100%;
+				}
 			}
-			.menu-opcoes{
-				position: absolute;
-				bottom: 10px;
-				right: 0;
-				margin-right: 200px;
-			}
-			.menu-opcoes ul li{
-				font-size: 15px;
-				display: inline;
-			}
-			a{
-				color: gray;
-				padding-right: 10px;
-				text-decoration: none;
-			}
-			.busca{
-				border-top-left-radius: 4px;
-				border-top-right-radius: 4px;
-			}
-			#campo-busca{
-				border-radius: 4px;
-			}
-			.busca,
-			.menu-departamentos{
-				background: url(../43/antigo/img/sobre-background.jpg);
-				font-weight: bold;
-				margin-right: 10px;
-				width: 230px;
-				float:left;
-			}
-			.busca h2,
-			.busca form,
-			.menu-departamentos h2{
-				margin: 10px;
-				text-transform: uppercase;
-			}
-			.menu-departamentos li{
-				background-color: white;
-				margin-bottom: 1px;
-				padding: 5px 10px;
-			}
-			.menu-departamentos li ul{
-				display: none;
-			}
-			.menu-departamentos ul ul li a:hover{
-				color: #900;
-			}
-			.menu-departamentos li:hover ul{
-				display: block;
-			}
-			.busca input{
-				vertical-align: middle;
-			}
-			.busca input[type=search]{
-				width: 170px;
-			}
-			.menu-departamentos{
-				clear:left;
-				margin-top: 10px;
-				padding-bottom: 10px;
-			}
-			.painel{
-				border: 1px solid black;
-				width: 445px;
-				margin: 10px 0;
-				padding: 10px;
-				border-radius: 10px;
-				box-shadow: 2px 2px 4px #999;
-			}
-			.novidades{
-				float: left;
-				background: url(../43/antigo/img/sobre-background.jpg);
-				background: rgb(252,252,252); /* Old browsers */
-				background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(155,155,155,1) 100%); /* FF3.6+ */
-				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(155,155,155,1))); /* 		Chrome,Safari4+ */
-				background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(155,155,155,1) 100%); /* Chrome10+,Safari5.1+ */
-				background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(155,155,155,1) 100%); /* Opera 11.10+ */
-				background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(155,155,155,1) 100%); /* IE10+ */
-				background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(155,155,155,1) 100%); /* W3C */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#9b9b9b',GradientType=0 ); /* IE6-9 */
-			}
-			.mais-vendidos{
-				float: right;
-				background: rgb(252,252,252); /* Old browsers */
-				background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(155,155,155,1) 100%); /* FF3.6+ */
-				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(155,155,155,1))); /* 	Chrome,Safari4+ */
-				background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(155,155,155,1) 100%); /* Chrome10+,Safari5.1+ */
-				background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(155,155,155,1) 100%); /* Opera 11.10+ */
-				background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(155,155,155,1) 100%); /* IE10+ */
-				background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(155,155,155,1) 100%); /* W3C */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#9b9b9b',GradientType=0 ); /* IE6-9 */
-			}
-			.painel li{
-				display: inline-block;
-				vertical-align: top;
-				width: 140px;
-				margin: 2px;	
-				padding-bottom: 0px;
-			}
-			.mais-vendidos a,
-			.novidades a{
-				font-size: 14px;
-				color: black;
-				text-align: center;
-			}
-			.painel h2{
-				font-size: 24px;
-				font-weight: bold;
-				text-transform: uppercase;
-				margin-bottom: 10px;
-				text-shadow: 2px 2px 2px rgba(255,255,255,0.8);
-			}
-			footer{
-				clear: both;
-				background-image: url(../43/antigo/img/fundo-rodape.png);
-				height: 40px;
-				padding: 20px 0;
-			}
-			footer .container{
-				position: relative;
-			}
-			.social li a{
-				height: 32px;
-				width: 32px;
-				display: block;
-				text-indent: -9999px;
-			}
-			.facebook{
-				background: url(../43/antigo/img/facebook.png) no-repeat;
-			}
-			.twitter{
-				background: url(../43/antigo/img/twitter.png) no-repeat;
-			}
-			.googleplus{
-				background: url(../43/antigo/img/googleplus.png) no-repeat;
-			}
-			.social{
-				position: absolute;
-				top: 5px;
-				right: 0;
-			}
-			.social li{
-				float: left;
-				margin-left: 25px;
-			}
-			footer img{
-				margin-top: 5px;
-				width: 100px;
-				
-			}
-			.menu-opcoes a:hover{
-				color: #900;
-			}
-			.menu-opcoes a:active{
-				color: #900;
-			}
-			.categorias{
-				color: black;
-				text-transform: uppercase;
-			}
-			.menu-departamentos li li a:before {
-				content: "- ";
-			}
-			.destaque{
-				position: relative;
-			}
-			.play{
-				display: block;
-				position:absolute;
-				right: 5px;
-				top: 13px;
-			}
-			.pause{
-				display: block;
-				position: absolute;
-				right: 15px;
-				top: 15px;
-			}
-			.pause{
-				border-left: 8px solid #900;
-				border-right: 8px solid #900;
-				height: 25px;
-				width: 0px;
-			}
-			.play{
-				border-left: 25px solid #900;
-				border-bottom: 15px solid transparent;
-				border-top: 15px solid transparent;
-			}
-			.painel li:hover{
-				background-color: white;
-				box-shadow: 0 0 5px #333;
-				transform: scale(1.1) rotate(5deg);
-				-webkit-transition: all 0.7s ease-in;
-				transition: all 0.7s ease-in;
-			}
-			.mais-vendidos li:hover{
-				transform: scale(1.1) rotate(-5deg);
-				-webkit-transition: all 0.7s;
-				transition: all 0.7s;
-			}
-			.painel li{
-				-webkit-transition: all 0.7s ease-out;
-				transition: all 0.7s ease-out;
-			}
+
 		</style>
 	</head>
-
 	<body>
 		<header class="container">
 			<h1><img src="43/antigo/img/logo.png" alt="Mirror Fashion" ></h1>
